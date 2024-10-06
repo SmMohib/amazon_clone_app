@@ -1,13 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:amazon_clone_app/common/provider/userProvider.dart';
 import 'package:amazon_clone_app/constants/global_variable.dart';
 import 'package:amazon_clone_app/features/auth/screens/auth_screen.dart';
 import 'package:amazon_clone_app/router.dart';
 import 'package:amazon_clone_app/screens/searchScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(
+      create: (contect)=>UserProvider())
+  ],child: MyApp(),));
 }
 
 class MyApp extends StatelessWidget {
@@ -45,8 +50,8 @@ class MyApp extends StatelessWidget {
           Builder(
             builder: (context) {
               return ElevatedButton(onPressed: (){
-                Navigator.pushNamed(context, Auth_Screen.routeName
-                );},child: Text('data'),);
+                Navigator.pushNamed(context, AuthScreen.routeName
+                );},child: Text('Login'),);
             }
           )
         ],

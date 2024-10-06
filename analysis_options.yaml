@@ -10,7 +10,9 @@
 analyzer:
   errors:
     constant_pattern_never_matches_value_type: ignore
+    must_be_immutable: ignore
     type_literal_in_constant_pattern: ignore
+    unused_field: ignore
 include: package:flutter_lints/flutter.yaml
 
 linter:

@@ -35,12 +35,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  #google_sign_in:
-  #http: 
-  #provider: 
+  google_sign_in:
+  http: 
+  provider: 
   #riverpod: ^2.5.1
-  #flutter_riverpod: ^2.5.1
-  # shared_preferences: 
+  flutter_riverpod: ^2.5.1
+  shared_preferences: 
   # badges: 
   # carousel_slider: 
   # dotted_border: 
@@ -50,7 +50,7 @@ dependencies:
   # pay: 
   # intl: 
   # charts_flutter: 
-  #flutter_riverpod:
+
 
 dev_dependencies:
   flutter_test:
